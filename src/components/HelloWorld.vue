@@ -1,10 +1,8 @@
 <template>
   <div class="w-11/12">
     <div class="flex justify-center pb-10">
-            <img src="../assets/Sharif.jpeg"
-                class="h-40 w-40 rounded-full object-cover"
-                alt="username"/>
-            <div class="ml-10">
+            <img src="../assets/Sharif.jpeg" class="h-40 w-40 rounded-full object-cover content-center" alt="username"/>
+            <div class="ml-10" id="div1">
                 <div class="flex items-center">
                     <h2 class="block leading-relaxed font-light text-gray-700 text-3xl">Sharif</h2>
                     
@@ -22,6 +20,7 @@
                         </svg>
                     </a>
                 </div>
+
                 <ul class="flex justify-content-around items-center">
                     <li>
                         <span class="block text-base flex"><span class="font-bold mr-2">23 </span> Posts</span>
@@ -34,11 +33,13 @@
                     </li>
                 </ul>
                 <br>
-                <div class="">
+                <div class="text-center md:text-left">
                     <span class="text-base">I am Sharif, I like playing game, read books and watch anime.</span>
-                </div>
+              </div>
             </div>
-    </div>
+      </div>
+
+
     <div class="border-b border-gray-300"></div>
     <article class="mt-5 grid grid-cols-3 gap-10">
         <div class="cursor-pointer relative" style="width:300px; height:300px">
@@ -71,18 +72,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+#div1 {
+  position: flex;
 }
 </style>
